@@ -29,22 +29,69 @@
   text-shadow: 0 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
 }
 
-.members-panel {
+.credits-panel {
+  position: absolute;
+  left: 154px;
+  top: 152px;
+  width: 1134px;
+  height: 441px;
+  background: rgba(22, 30, 50, 0.72);
+  border-radius: 20px;
+}
+.credits-title {
   position: absolute;
   left: 204px;
-  top: 156px;
-  width: 1034px;
-  height: 458px;
-  padding-top: 22px;
-  background: rgba(20, 22, 32, 0.62);
-  border-radius: 22px;
-  text-align: center;
-  text-shadow: 0 2px 0 #000;
+  top: 176px;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 3px 3px 0 #000;
 }
-.members-panel h1 { margin: 0 0 4px; font-size: 42px; font-weight: 700; }
-.members-panel p { margin: 0; font-size: 24px; line-height: 36px; }
-.members-panel .members-gap { margin-top: 52px; }
-.members-panel .members-credit { position: absolute; left: 0; right: 0; bottom: 18px; font-size: 14px; }
+.credits-title-sub {
+  font-size: 30px;
+  color: var(--accent);
+  text-shadow:
+    2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    3px 3px 0 #000;
+}
+.credits-based {
+  position: absolute;
+  right: 199px;
+  top: 186px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 2px 2px 0 #000;
+}
+.member-card {
+  background: rgba(15, 22, 40, 0.85);
+  border-radius: 14px;
+}
+.member-info { position: absolute; left: 33px; top: 205px; }
+.member-info p { margin: 0; font-size: 19px; line-height: 29px; white-space: nowrap; }
+.member-xp {
+  position: absolute;
+  left: 41px;
+  top: 303px;
+  width: 157px;
+  height: 13px;
+  background: #4a6a99;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.member-xp span { display: block; height: 100%; background: var(--yellow); border-radius: 7px 0 0 7px; }
+.credits-note {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 612px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
 
 /* ---------- Welcome / Updates ---------- */
 .family-frame {

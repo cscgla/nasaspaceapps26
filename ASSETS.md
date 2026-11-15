@@ -5,11 +5,11 @@ Put the files in `src/assets/figma/`. The app picks them up by name automaticall
 
 To find a layer, open the file in Figma and paste the node id into the URL: `?node-id=90-785` (use `-` instead of `:`).
 
-**29 of 58 done.**
+**33 of 62 done.**
 
 | Status | File name | Figma layer (node id + name) | Group |
 |---|---|---|---|
-| ⬜ needed | `bg-members.png` | Members screen › background (campus) | Backgrounds |
+| ⬜ needed | `bg-members.png` | Credit Page › background (campus) | Backgrounds |
 | ⬜ needed | `bg-cny.png` | One Day Event (Chinese New Year) › background | Backgrounds |
 | ⬜ needed | `bg-raya.png` | One Day Event (Hari Raya) › background | Backgrounds |
 | ⬜ needed | `bg-deepavali.png` | One Day Event (Deepavali) › background | Backgrounds |
@@ -44,6 +44,10 @@ To find a layer, open the file in Figma and paste the node id into the URL: `?no
 | ✅ done | `bg-snowy.png` | One Day Event (Christmas) › snowy-flyer-loop | Backgrounds |
 | ✅ done | `bg-hazy.png` | One Day Event (Haze) › hazy-flyer-loop | Backgrounds |
 | ✅ done | `event-end.png` | "You Died!" screen › image 6 | Backgrounds |
+| ✅ done | `member-cody.png` | Credit Page › Cody Tan photo | Credit page |
+| ✅ done | `member-astro.png` | Credit Page › Astro photo | Credit page |
+| ✅ done | `member-izzat.png` | Credit Page › Izzat photo | Credit page |
+| ✅ done | `member-depesh.png` | Credit Page › Depesh photo | Credit page |
 | ✅ done | `card-usa.png` | Start Page › USA card image | Start page |
 | ✅ done | `card-sg.png` | Start Page › Singapore card image | Start page |
 | ✅ done | `card-event.png` | Start Page › Doodle Space Agency card image | Start page |

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { Img, Scene, boxStyle } from '../components/Stage'
-import { Brand, StartButton, StepButton } from '../components/ui'
+import { Brand, StartButton } from '../components/ui'
 import type { AssetName } from '../assets'
 
 const CARDS: { img: AssetName; caption: string; x: number; to: string }[] = [
@@ -30,22 +30,41 @@ export default function Start() {
   )
 }
 
-/** "Members": team credits. */
+const MEMBERS: { name: string; role: string; level: number; xp: number; photo: AssetName }[] = [
+  { name: 'Cody Tan', role: 'Creative Lead', level: 24, xp: 51, photo: 'member-cody' },
+  { name: 'Astro', role: 'Asset Designer', level: 22, xp: 41, photo: 'member-astro' },
+  { name: 'Izzat', role: 'Team Lead', level: 26, xp: 58, photo: 'member-izzat' },
+  { name: 'Depesh', role: 'Developer', level: 22, xp: 41, photo: 'member-depesh' },
+]
+
+/** "Credit Page": team cards. */
 export function Members() {
   const navigate = useNavigate()
   return (
     <Scene bg="bg-members">
-      <div className="members-panel">
-        <h1>TRIPLE C</h1>
-        <p>Home Country: Singapore</p>
-        <p className="members-gap">Team Members:</p>
-        {['Izzat', 'Cody', 'Astro', 'Depesh'].map((n) => (
-          <p key={n}>{n}</p>
-        ))}
-        <p className="members-credit">Image Generated with ChatGPT</p>
-      </div>
+      <div className="credits-panel" />
+      <p className="credits-title">
+        TEAM <span className="credits-title-sub">//TRIPLE C</span>
+      </p>
+      <p className="credits-based">Astronaut Based In Singapore</p>
+      {MEMBERS.map((m, i) => (
+        <div key={m.name} className="member-card" style={boxStyle({ x: 201 + i * 267, y: 257, w: 238, h: 335 })}>
+          <Img name={m.photo} alt={m.name} x={44} y={24} w={151} h={151} />
+          <div className="member-info">
+            <p>Name: {m.name}</p>
+            <p>Role: {m.role}</p>
+            <p>Level: {m.level}</p>
+          </div>
+          <div className="member-xp">
+            <span style={{ width: `${m.xp}%` }} />
+          </div>
+        </div>
+      ))}
+      <p className="credits-note">Image Generated with ChatGPT</p>
       <Brand section="Members" />
-      <StepButton label="Back" x={659} y={640} w={122} h={38} onClick={() => navigate('/')} />
+      <button className="btn-step" style={boxStyle({ x: 660, y: 689, w: 121, h: 37 })} onClick={() => navigate('/')}>
+        Start
+      </button>
     </Scene>
   )
 }
