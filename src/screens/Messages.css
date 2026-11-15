@@ -1,0 +1,123 @@
+/* Send a Note screen (WriteNote in Messages.tsx). Imported by Messages.tsx. */
+.note-form {
+  background: rgba(35, 48, 73, 0.92);
+  border-radius: 25px;
+}
+.note-form-title { position: absolute; left: 43px; top: 44px; margin: 0; font-size: 38px; font-weight: 700; }
+.note-form-sub { position: absolute; left: 43px; top: 94px; margin: 0; font-size: 22px; font-weight: 700; color: #8fb4e3; white-space: nowrap; }
+.note-form-card {
+  position: absolute;
+  left: 28px;
+  top: 170px;
+  width: 707px;
+  height: 428px;
+  padding: 26px 31px 47px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(143, 180, 227, 0.6) transparent;
+  display: flex;
+  flex-direction: column;
+}
+.note-form-card::-webkit-scrollbar { width: 6px; }
+.note-form-card::-webkit-scrollbar-thumb { background: rgba(143, 180, 227, 0.6); border-radius: 3px; }
+.note-form-label { flex: none; font-size: 18px; font-weight: 700; color: #8fa4c4; margin: 4px 0 16px; }
+.note-input {
+  flex: none;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 14px 28px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  background: #1e2538;
+  border: 2px solid #8fb4e3;
+  border-radius: 6px;
+  outline: none;
+  text-transform: uppercase;
+}
+.note-input::placeholder { color: var(--white); }
+.note-input:focus { border-color: var(--white); outline: none; }
+.note-textarea { height: 247px; margin-bottom: 10px; resize: none; padding: 22px 20px; line-height: 24px; }
+.note-count { flex: none; margin: 0 0 30px; text-align: right; font-size: 16px; font-weight: 700; color: #8fb4e3; }
+
+.note-attach { flex: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 23px; margin: 4px 0 60px; }
+.attach-tile {
+  position: relative;
+  height: 169px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  background: #1e2538;
+  border: 3px solid #8fb4e3;
+  border-radius: 4px;
+}
+.attach-tile.is-added { border-color: var(--yellow); }
+.attach-thumb { border-radius: 6px; }
+.attach-plus {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 85px;
+  height: 85px;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+  border: 3px dashed #8fb4e3;
+  border-radius: 4px;
+  font-size: 56px;
+  line-height: 1;
+  color: #8fb4e3;
+}
+.attach-name { font-size: 18px; font-weight: 700; }
+.attach-hint { margin-top: 4px; font-size: 17px; color: #8fb4e3; }
+
+.note-signal {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 207px;
+  padding: 18px 36px 24px 36px;
+  background: #1e2538;
+  border: 3px solid #8fb4e3;
+  border-radius: 10px;
+}
+.note-signal p { margin: 0; font-size: 22px; font-weight: 700; line-height: 41px; color: #8fb4e3; }
+.note-signal .signal-title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.v-white { color: var(--white); }
+.v-yellow { color: #f0b429; }
+.v-green { color: #22e35a; }
+.btn-getdata { width: 174px; height: 66px; font-size: 20px; border-width: 3px; border-radius: 12px; }
+.note-arrives { flex: none; margin: 18px 0 40px; font-size: 16px; font-weight: 700; color: #8fa4c4; }
+
+.note-form-actions { flex: none; display: flex; justify-content: center; gap: 70px; }
+.btn-form { width: 211px; height: 80px; font-size: 24px; border-width: 4px; border-radius: 10px; }
+
+.ephemeris {
+  position: relative;
+  width: 1266px;
+  height: 622px;
+  padding: 50px 50px 30px;
+  background: #1e2334;
+  border-radius: 14px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.ephemeris h2 { margin: 0; font-size: 28px; font-weight: 700; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 3px; }
+.ephemeris-rule { margin: 28px 0 10px; font-weight: 700; letter-spacing: 1px; overflow: hidden; white-space: nowrap; width: 580px; }
+.ephemeris pre { margin: 0; font-family: var(--font-pixel); font-weight: 700; font-size: 19px; line-height: 30px; white-space: pre; }
+.ephemeris-close { position: absolute; right: 40px; top: 26px; font-size: 40px; line-height: 1; color: #c9ccd6; }
+.ephemeris-close:hover { color: var(--white); }
+
