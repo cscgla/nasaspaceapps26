@@ -57,7 +57,8 @@ export const ASSETS = {
   'note-photo-sis': 'Messages › A note from sis › photo',
   'note-photo-mum': 'Messages › A note from mum › photo',
   'note-photo-friend': 'Messages › From your best friend › photo',
-  'satellite': 'Send a Note › satellite on the speech bubble',
+  'note-attachment': 'Send a Note › attached photo thumbnail',
+  'satellite':'Send a Note › satellite on the speech bubble',
   'toast-draft-art': 'Draft Saved! popup › otter at the mailbox shelf',
   'toast-sent-art': 'Message Sent! popup › otter at the mailbox',
   // Singapore otter
