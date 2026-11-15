@@ -1,0 +1,67 @@
+/* Design tokens pulled from the Figma file */
+:root {
+  --font-pixel: 'Pixelify Sans Variable', 'Pixelify Sans', system-ui, sans-serif;
+  --font-silk: 'Silkscreen', var(--font-pixel);
+
+  --ink: #141414;
+  --ink-soft: #444444;
+  --white: #ffffff;
+  --accent: #ffc83d;          /* "//Home" section label */
+  --blue: #2f6fd6;            /* "OTTie SAYS:" label */
+  --go: #198908;              /* START button */
+  --go-hover: #31c110;        /* START hover ("GO!") */
+  --yellow: #ffc83d;          /* selected chips / tiles */
+  --blue-btn: #3e5c8a;        /* PLAY, Back/Next hover */
+  --navy-btn: #112d4e;        /* PLAY hover */
+  --green-btn: #1f6b3f;       /* WRITE A NOTE, GET DATA, SEND NOTE */
+  --green-btn-hover: #17502f;
+  --energy-1: #e8590c;
+  --energy-2: #e0a800;
+  --energy-3: #a8e890;
+
+  --panel: rgba(15, 27, 51, 0.85);
+  --panel-border: #3e5c8a;
+  --panel-text: #dce8f7;
+  --panel-shadow: inset 0 4px 4px rgba(10, 18, 36, 0.35);
+  --dim: rgba(0, 0, 0, 0.3);  /* "Off-Focus" overlay */
+
+  --mood-great: #a8e890;
+  --mood-good: #d5f0a0;
+  --mood-okay: #ffe9a0;
+  --mood-low: #ffd0a8;
+  --mood-rough: #f5b5b5;
+  --track: #d9e2f0;
+
+  --text-shadow: 0 4px 4px #000;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: #05070f;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-pixel);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+img { image-rendering: pixelated; }
